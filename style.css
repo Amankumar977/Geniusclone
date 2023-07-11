@@ -101,6 +101,80 @@ Header
   font-size: 0.85rem;
   font-weight: 590;
 }
+.bars {
+  display: none;
+}
+/* =========
+Media
+=========== */
+@media screen and (max-width: 750px) {
+  .bars {
+    display: block;
+  }
+  .signButtons {
+    display: none;
+  }
+  .smallNewsSection {
+    flex-direction: column;
+  }
+  .smallNews {
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+  }
+  .smallNews::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header_cont img {
+    display: none;
+  }
+  .subHeader {
+    display: none;
+  }
+  .bigNews {
+    height: 18rem;
+    flex-direction: column;
+    width: 38rem;
+  }
+  .img_cont {
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .soloYear {
+    display: none;
+    width: 100%;
+  }
+  .bigNewsContent {
+    padding: 0;
+
+    width: 100%;
+  }
+  .bignewsspan {
+    display: none;
+  }
+}
+@media screen and (max-width: 290px) {
+  .header_cont > form > input {
+    width: 8rem;
+  }
+  #text::placeholder {
+    font-size: 10px;
+  }
+  .bigNews {
+    width: 28rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 965px) {
+  .socialmedia {
+    display: none;
+  }
+  .subHeader span {
+    padding: 0px 1rem;
+  }
+}
 /* =========
 Subheader
 =========== */
@@ -121,6 +195,7 @@ Subheader
   gap: 2rem;
   padding-left: 2rem;
 }
+
 /* =========
 Main
 =========== */
@@ -132,7 +207,7 @@ Section Big News
   font-family: "Poppins", sans-serif;
 }
 .bigNewsContent {
-  width: 45%;
+  width: 55%;
   padding: 0px 2rem;
   line-height: 1.5rem;
 }
@@ -175,6 +250,30 @@ Section Small News
 }
 .smallNews > h3 {
   margin-bottom: 5rem;
+}
+.smallNewsImgCont1 {
+  width: 100%;
+  height: 8rem;
+  background-image: url("https://t2.genius.com/unsafe/177x177/https%3A%2F%2Fimages.genius.com%2F51e5180d433a1aef6accd6a6f247bd58.1000x1000x1.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+}
+.smallNewsImgCont2 {
+  width: 100%;
+  height: 8rem;
+  background-image: url("https://t2.genius.com/unsafe/284x284/https%3A%2F%2Fimages.genius.com%2Fe36fdcd21aabe7caee88c9b9f236ceb6.810x810x1.jpg");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+}
+.smallNewsImgCont3 {
+  width: 100%;
+  height: 8rem;
+  background-image: url("https://t2.genius.com/unsafe/177x177/https%3A%2F%2Fimages.genius.com%2F71dc6487d2be423e7e3f5acb7265f3d7.1000x1000x1.jpg");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
 }
 /*====================
     Chart Section
