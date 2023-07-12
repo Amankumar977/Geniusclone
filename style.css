@@ -107,22 +107,15 @@ Header
 /* =========
 Media
 =========== */
-@media screen and (max-width: 750px) {
-  .bars {
-    display: block;
+@media screen and (max-width: 290px) {
+  .header_cont > form > input {
+    width: 8rem;
   }
-  .signButtons {
-    display: none;
+  #text::placeholder {
+    font-size: 10px;
   }
-  .smallNewsSection {
-    flex-direction: column;
-  }
-  .smallNews {
-    padding-bottom: 20px;
-    border-bottom: 2px solid black;
-  }
-  .smallNews::after {
-    display: none;
+  .bigNews {
+    width: 28rem;
   }
 }
 @media screen and (max-width: 450px) {
@@ -153,20 +146,60 @@ Media
   .bignewsspan {
     display: none;
   }
-}
-@media screen and (max-width: 290px) {
-  .header_cont > form > input {
-    width: 8rem;
-  }
-  #text::placeholder {
-    font-size: 10px;
-  }
-  .bigNews {
-    width: 28rem;
+  .onlyFire {
+    display: none;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 680px) {
+  .socialmedia2 {
+    display: none;
+  }
+  .footeroptions > ul > li {
+    font-size: 0.2rem;
+  }
+  .Abcd {
+    display: none;
+  }
+  #coumh1 {
+    font-size: 150px;
+    font-weight: 500;
+  }
+  .coumHead {
+    width: 30%;
+  }
 }
+@media screen and (max-width: 750px) {
+  .learnGenius {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .signButtons {
+    display: none;
+  }
+  .smallNewsSection {
+    flex-direction: column;
+  }
+  .smallNews {
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    border-width: 80%;
+  }
+  .smallNews::after {
+    display: none;
+  }
+  .chartHead {
+    font-size: 3rem;
+  }
+  .chartDropDown {
+    display: none;
+  }
+  .SongNameLyrics {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 965px) {
   .socialmedia {
     display: none;
@@ -175,6 +208,14 @@ Media
     padding: 0px 1rem;
   }
 }
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 850px) {
+  .mainVideoCont {
+    width: 90%;
+  }
+}
+
 /* =========
 Subheader
 =========== */
@@ -287,12 +328,15 @@ Section Small News
   font-size: 5rem;
 }
 .chartDropDown {
-  border: 2.5px solid black;
+  border: 2.5px solid rgb(4, 4, 4);
   padding: 1rem 1.8rem;
   height: 1.8rem;
   gap: 1rem;
   align-items: center;
   font-family: "Poppins", sans-serif;
+}
+.onlyFire {
+  color: rgb(225, 35, 67);
 }
 /*====================
     chartLeaderboard
@@ -361,19 +405,23 @@ VideoSection
   width: 100%;
   justify-content: space-between;
 }
+.imgBox {
+  position: relative;
+}
 .imgBox img {
-  width: 92%;
+  width: 100%;
+  height: 100%;
 }
 .mainVideoCont #videoPlayButton {
   background-color: var(--primary-color);
   justify-content: center;
-  position: relative;
   align-items: center;
-  bottom: -85%;
-  right: -82%;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
   width: 50px;
   height: 50px;
-  z-index: 503;
   cursor: pointer;
 }
 #videoPlayButton i {
@@ -382,6 +430,7 @@ VideoSection
 .videoouter {
   margin-top: 3rem;
   width: 30%;
+  margin-left: 2rem;
   line-height: 2rem;
   font-family: "Roboto", sans-serif;
 }
@@ -459,7 +508,7 @@ Community section
   justify-content: center;
   font-family: "Poppins", sans-serif;
 }
-.coumHead > h1 {
+#coumh1 {
   font-size: 5rem;
   font-weight: 1000;
 }
@@ -495,6 +544,7 @@ Community Leader Board
 
 .img {
   border-radius: 50%;
+  width: 10%;
 }
 .coumLeaders:hover {
   background-color: rgb(215, 215, 215);
