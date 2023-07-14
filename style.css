@@ -515,7 +515,7 @@ Community section
 .coumHead span {
   font-size: 1rem;
   font-weight: 500;
-  color: #f84d69;
+  color: #ec3453;
 }
 .coumbtn {
   justify-content: center;
@@ -553,7 +553,7 @@ Community Leader Board
   background-color: rgb(255, 254, 254);
 }
 .iqEarned {
-  color: #f9405f;
+  color: #e62344;
 }
 /* ======
 Footer
@@ -608,7 +608,7 @@ Footer
 }
 .termsOfUse:link {
   text-decoration: none;
-  color: #979494;
+  color: #9a9999;
   font-size: 0.7rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
