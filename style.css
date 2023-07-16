@@ -65,7 +65,7 @@ Header
 =========== */
 .header_cont {
   justify-content: space-between;
-  background-color: #ffff64;
+  background-color: #f9f962;
   padding: 0.5rem 1rem;
   align-items: center;
 }
@@ -251,6 +251,9 @@ Section Big News
   width: 55%;
   padding: 0px 2rem;
   line-height: 1.5rem;
+}
+.bigNewsContent > * {
+  margin-top: 1rem;
 }
 .img_cont {
   background-image: url("https://t2.genius.com/unsafe/1336x752/https%3A%2F%2Fimages.genius.com%2F3fde1b8d572100d828324ca616ab36b9.1920x1080x1.png");
